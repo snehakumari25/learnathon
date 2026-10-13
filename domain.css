@@ -1,0 +1,171 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #FFBF1A;
+    text-align: center;
+    height: 30px;
+}
+
+.header a {
+    color: #005432;
+}
+
+nav a {
+    color: white;
+}   
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.left a {
+    text-decoration: none;
+}
+.left button {
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-right: 50px;
+}
+
+#main a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 16px 0px 16px;
+}
+img {
+    height: 50px;
+    width: 150px;
+}   
+
+.right button {
+    padding: 5px;
+    border-radius: 50px;
+    transition-duration: 0.1s;
+}
+.right button:hover {
+    background-color: #FFBF1A;
+    color: #110C29;
+    border-color: #110C29; 
+}
+.hero {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "DM sans", sans-serif;
+}
+.hero button {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+.hero-contant {
+    text-align: center;
+    background-color: rgb(121, 235, 220);
+    color: black;
+    padding: 30px 80px 80px 80px;
+    flex: 1;
+}
+
+.hero-contant h1 {
+    padding-bottom: 10px;
+}
+.hero-contant p {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 400px;
+    height: 50px;
+}
+footer {
+    background-color: #110C29;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#foot {
+    background-color: #110C29;
+    color: white;
+}
+ @media (max-width: 768px) {
+
+    .header {
+        height: auto;
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .left {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .right {
+        padding-right: 0;
+        gap: 15px;
+    }
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .hero button {
+        margin: 4px 2px;
+        font-size: 13px;
+    }
+    .hero-contant {
+        padding: 30px 20px;
+    }
+
+    .hero-contant h1 {
+        font-size: 22px;
+    }
+
+    .hero-contant p {
+        font-size: 15px;
+    }
+    textarea {
+        width: 100%;     
+        max-width: 400px;
+        height: 60px;
+    }
+} 

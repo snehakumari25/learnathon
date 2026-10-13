@@ -1,0 +1,149 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #FFBF1A;
+    text-align:center;
+    height:30px
+}
+  a{
+    color:#005432;
+}  
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:10px;
+    height:60px;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+ .left a {
+    text-decoration:none;
+}
+
+.left button{
+    color:black;
+    background-color:white;
+    border:none;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#main a{
+    text-decoration:none;
+    color:black;
+    padding:0px 16px 0px 16px;
+}
+img{
+    height:50px;
+    width:147px;
+}  
+
+main{
+    margin-top:80px;
+    font-family:sans-serif;
+}
+h2{
+    font:20px "DM sans",sans-serif;
+    color:black;
+}
+h1{
+    font:50px "DM sans",sans-serif;
+    color:black;
+}
+p{
+    font:16px "DM sans",sans-serif;
+    color:black;
+}
+.hero{
+    padding:70px;
+}
+.hero b{
+    color:#673DE6
+}
+p{
+    gap:25px;
+}
+footer{
+    width:100%;
+    bottom:0px; 
+    position:fixed;
+    text-align:center;
+    padding:20px;
+    font-size:16px;   
+    font-family:"DM sans",sans-serif;
+}
+#button{
+    background-color:#673DE6;
+    color:white;
+    border:none;
+    padding:12px 48px;
+    font:16px "DM sans",sans-serif;
+    border-radius:10px;
+}
+ .hero{
+    background-image:url("sale-woo.png.png");
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size:50%; 
+} 
+.right{
+padding-right:50px;
+}
+.right button{
+    padding:5px;
+    border-radius:50px;
+    transition-duration: 0.1s;
+}
+.right button:hover{
+    background-color:#FFBF1A;
+    color:black;
+    border-color:black;
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    flex-direction: column;
+  }
+  .features-column, .pricing-column {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

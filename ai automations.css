@@ -1,0 +1,166 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.header{
+background-color:#FFBF1A;
+text-align:center;
+height:30px
+}
+
+.header a{
+color:#005432;
+}
+
+ nav a{
+    color:white;
+}  
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:10px;
+    height:60px;
+    background-color:black;
+    color:white;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+ .left a {
+    text-decoration:none;
+}
+.left button{
+    color:white;
+    background-color:black;
+    border:none;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#main a{
+    text-decoration:none;
+    color:black;
+    padding:0px 16px 0px 16px;
+}
+img{
+    height:50px;
+    width:150px;
+}   
+
+.right{
+padding-right:50px;
+}
+.right button{
+    padding:5px;
+    border-radius:50px;
+    transition-duration: 0.1s;
+}
+.right button:hover{
+    background-color:#FFBF1A;
+    color:#110C29;
+    border-color:#110C29; 
+}
+.hero{
+    text-align:center;
+    background-color:black;
+    color:white;
+    font-family:"DM sans",sans-serif;
+}
+.hero button{
+    background-color:blue;
+    color:white;
+    border-radius:15px;
+    padding:10px;
+    text-align:center;
+    position:center;   
+}
+body {
+     font-family: Arial, sans-serif;
+     background: #f5f5f5;
+     }
+.container {
+     max-width: 800px; 
+     margin: auto; 
+    }
+
+.top-bar {
+     display: flex; justify-content:
+      space-between; margin: 15px 0;
+     }
+
+.tabs button {
+     padding: 8px 14px; border: 1px solid #ccc;
+    background: white;
+    border-radius: 15px;
+    cursor: pointer;
+     }
+.tabs button.active { 
+    background: black; 
+    color: white;
+     border-color: black;
+     }
+
+.dropdown { 
+    padding: 8px;
+     border-radius: 6px;
+      border: 1px solid #6366f1;
+     }
+
+.card {
+     background: white;
+      padding: 20px; 
+      border-radius: 10px;
+       border: 1px solid #ddd;
+        display: flex;
+         justify-content: space-between;
+          align-items: center; 
+        }
+
+.details p {
+     color: #666;
+      font-size: 14px;
+       margin: 8px 0 15px; 
+    }
+
+.btn {
+     background: #6366f1; 
+     color: white; 
+     border: none; 
+     padding: 10px 18px;
+      border-radius: 6px; 
+      cursor: pointer; 
+      font-weight: bold;
+     }
+
+
+.price-box {
+     text-align: right;
+     }
+.price-box h2 { 
+    font-size: 26px;
+     margin-top: 5px;
+     }
+.price-box span {
+     font-size: 14px; 
+     color: #666; 
+     font-weight: normal; 
+    }
+    
+@media (max-width: 768px) {
+  .content-grid {
+    flex-direction: column;
+  }
+  .features-column, .pricing-column {
+    max-width: 100%;
+  }
+}

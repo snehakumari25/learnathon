@@ -1,0 +1,270 @@
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.header{
+background-color:#FFBF1A;
+text-align:center;
+height:30px
+}
+
+.header a{
+color:#005432;
+}
+
+ nav a{
+    color:white;
+}  
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:10px;
+    height:60px;
+    background-color:black;
+    color:white;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+ .left a {
+    text-decoration:none;
+}
+.left button{
+    color:white;
+    background-color:black;
+    border:none;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#main a{
+    text-decoration:none;
+    color:black;
+    padding:0px 16px 0px 16px;
+}
+img{
+    height:50px;
+    width:150px;
+}   
+.right button{
+    padding:5px;
+    border-radius:50px;
+    transition-duration: 0.1s;
+}
+.right button:hover{
+    background-color:#FFBF1A;
+    color:#110C29;
+    border-color:#110C29; 
+}
+.hero{
+    text-align:center;
+    background-color:black;
+    color:white;
+    font-family:"DM sans",sans-serif;
+}
+.hero button{
+    background-color:blue;
+    color:white;
+    border-radius:15px;
+    padding:10px;
+    text-align:center;
+    position:center;
+} 
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Container */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* Header Row */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.header-row h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.plan-dropdown {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #334155;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+}
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.06);
+}
+
+.card.popular {
+    border: 2px solid #6366f1;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.popular-header {
+    background-color: #6366f1;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 0;
+    margin: 0 -24px 20px -24px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    background-color: #facc15;
+    color: #000000;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.card.popular .discount-badge {
+    top: 45px;
+}
+.plan-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.old-price {
+    font-size: 13px;
+    color: #94a3b8;
+    text-decoration: line-through;
+    margin-bottom: 2px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 400;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    color: #6366f1;
+    border: 1px solid #6366f1;
+}
+
+.btn-outline:hover {
+    background-color: #f5f3ff;
+}
+
+.btn-filled {
+    background-color: #6366f1;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-filled:hover {
+    background-color: #4f46e5;
+}
+.renew-info {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #f1f5f9;
+    margin-bottom: 16px;
+}
+.features {
+    list-style: none;
+}
+
+.features li {
+    font-size: 13px;
+    color: #334155;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.features li i {
+    color: #94a3b8;
+    font-size: 14px;
+    width: 16px;
+    text-align: center;
+}
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
